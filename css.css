@@ -1,0 +1,206 @@
+/* កំណត់ទូទៅ (Reset & Base Styles) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kantumruuy Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* របារ مឺនុយ (Navbar) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.btn-cta {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #1d4ed8;
+}
+
+/* ផ្នែក Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 100px 8%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* ផ្នែកសេវាកម្ម (Services) */
+.services-section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* ផ្នែក Footer */
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* ការរចនាសម្របតាមទូរស័ព្ទដៃ (Responsive Design) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  .nav-links {
+    margin-bottom: 10px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-buttons a {
+    margin: 10px 5px;
+    width: 80%;
+  }
+}
